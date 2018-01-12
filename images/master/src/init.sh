@@ -7,6 +7,8 @@ echo -e "| Jenkins master container |";
 echo -e "+--------------------------+\n";
 
 echo -e "\nPull config from repository...\n";
+echo -e "\nroot dir contents...";
+ls -R /root;
 cd /root/jenkins;
     git pull;
     if [[ "${?}" != 0 ]]; then
