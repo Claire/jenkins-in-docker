@@ -43,3 +43,15 @@ postbuildscript
 testng-plugin
 simple-theme-plugin
 jquery
+blueocean
+amazon-ecs
+aws-credentials
+aws-java-sdk
+docker-commons
+ec2
+handlebars
+jacoco
+hipchat
+htmlpublisher
+nodejs
+view-job-filters

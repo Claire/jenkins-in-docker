@@ -14,18 +14,23 @@ jQuery(function($) {
     };
 
     var domain = getSubdomain(window.location.hostname);
-    var theTitleLink = $('#jenkins-home-link');
+    var titleName = domain + " Jenkins";
+    var theTitleLink = jQuery('#jenkins-home-link');
     if (theTitleLink.length === 0) {
-        theTitleLink = $("#top-panel a").first();
-        theTitleLink.html("<div id='my-title'>" + domain + " Jenkins </div>");
+        theTitleLink = jQuery("#top-panel a").first();
+        theTitleLink.html("<div id='my-title'>" + titleName + "</div>");
     } else {
-        theTitleLink.html(domain);
+        theTitleLink.html(domain + " Jenkins");
         if (theTitleLink.parent("td").length === 0) {
             // ugh, hack
             theTitleLink.addClass("new-header-link");
         }
     }
-    document.title="local jenkins"
+    var theLogo = jQuery('.logo');
+    if (theLogo.length === 1) {
+        theLogo.append('<div class=serverName>' + titleName + '</div>');
+    }
+    document.title= document.title +"[" + titleName + "]"
 
 });
 

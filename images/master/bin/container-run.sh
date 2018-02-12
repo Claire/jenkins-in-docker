@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export LOCALGIT_WORKSPACE= ~/git
 
 docker run \
     -d \
