@@ -70,4 +70,4 @@ VOLUME $JENKINS_HOME/workspace
 
 # Run init.sh script after container start
 COPY src/init.sh /usr/local/bin/init.sh
-ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/init.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/init.sh"]
