@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export LOCALGIT_WORKSPACE= ~/git
+export LOCALGIT_WORKSPACE=/Users/cmartinez/GDrive/_src/git
 
 docker run \
     -d \

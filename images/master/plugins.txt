@@ -41,7 +41,6 @@ log-parser
 workflow-support
 postbuildscript
 testng-plugin
-simple-theme-plugin
 jquery
 blueocean
 amazon-ecs

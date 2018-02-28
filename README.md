@@ -7,7 +7,7 @@ This repository contains _Jenkins_ master and agent `Dockerfiles`, [read how to 
 to remove any old instance and restart a new one run:
 ```
 cd images/master
-bin/restart.sh
+bin/rebuild.sh
 ```
 
 
